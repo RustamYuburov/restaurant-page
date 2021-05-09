@@ -1,4 +1,6 @@
+import { createAbout } from './about'
 
+// Creating Header and filling logo&navigation functions
 function createHeader(arr, obj) {
     const header = document.createElement('header');
     header.classList.add('header');
@@ -7,19 +9,6 @@ function createHeader(arr, obj) {
     header.appendChild(createNavigation(arr));
 
     return header;
-}
-
-function createNavigation(array) {
-    const navigation = document.createElement('nav');
-    navigation.classList.add('navigation');
-
-    array.forEach(element => {
-        const button = document.createElement('button');
-        button.textContent = element;
-        navigation.appendChild(button);
-    });
-
-    return navigation;
 }
 
 function createLogo(name, path) {
@@ -40,13 +29,31 @@ function createLogo(name, path) {
     return logoDiv;
 }
 
+function createNavigation(array) {
+    const navigation = document.createElement('nav');
+    navigation.classList.add('navigation');
+
+    array.forEach(element => {
+        const button = document.createElement('button');
+        button.textContent = element;
+        navigation.appendChild(button);
+    });
+
+    return navigation;
+}
+// End of Header & etc functions
+
+// Creating Main div function
 function createMain() {
     const main = document.createElement('main');
     main.classList.add('main');
 
+    main.appendChild(createAbout());
+
     return main;
 }
 
+// Creating Footer function
 function createFooter(obj) {
     const footer = document.createElement('footer');
     footer.classList.add('footer');
@@ -68,6 +75,7 @@ function createFooter(obj) {
     return footer;
 }
 
+// Writing Initialize website function
 function init() {
     const headerArray = ['Home', 'Menu', 'Contacts'];
     const headerObject = {
@@ -87,4 +95,4 @@ function init() {
     content.appendChild(createFooter(footerObject));
 }
 
-export { init };
+export { init }
