@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+/* Root */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background: url(../images/background.jpeg) no-repeat center center fixed;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    margin-left: 50px;
+    padding-left: 50px;
+    justify-items: center;
+}
+
+.logo-image {
+    height: 120px;
+    margin: 10px 20px 10px 0;
+}
+
+.cafe-name {
+    margin: 45px 10px 0 20px;
+    font-family: 'Caveat', Verdana, Tahoma, sans-serif;
+    color: rgb(10, 250, 110);
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 25px rgb(0, 119, 255), 0 0 5px rgb(0, 32, 139);
+}
+
+/* Navigation */
+
+.navigation {
+    margin-right: 150px;
+}
+
+.navigation button {
+    margin:30% 10px 10px 10px;
+}
+
+/* Main */
+
+.main {
+    border: solid 3px rgba(250, 250, 250, 0.39);
+    width: 60%;
+    margin: 40px 0 40px  20%;
+    background-color: rgba(2, 2, 2, 0.527);
+}
+
+.about-img img{
+    height: 300px;
+    margin: 40px 0 40px 25%;
+    border: solid rgba(12, 207, 45, 0.966);
+    box-shadow: 0 4px 8px 0 rgba(255, 253, 253, 0.418), 0 6px 20px 0 rgba(255, 255, 255, 0.466);
+}
+
+.main .description {
+    margin: 30px 80px;
+    font-family: 'Architects Daughter', Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 550;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Footer */
+
+.footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(31, 31, 31, 0.842);
+    border-top: solid black 2px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.footer span {
+    margin-right: 10px;
+    font-size: 25px;
+    font-family: 'Caveat',  Tahoma, sans-serif;
+}
+
+.footer img {
+    margin-left: 5px;
+    height: 35px;
+    border-radius: 50%;
+}
