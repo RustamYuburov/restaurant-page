@@ -47,7 +47,21 @@ body {
 }
 
 .navigation button {
-    margin:30% 10px 10px 10px;
+    margin:10% 5px 10px 5px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: 'Caveat', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    color: rgb(119, 0, 255);
+    border:rgba(255, 255, 255, 0)
+}
+
+.navigation button:active {
+    transform: translateY(5px);
+    transition: 0.3s;
 }
 
 /* Main */
