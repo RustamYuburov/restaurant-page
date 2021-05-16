@@ -81,7 +81,7 @@ function init() {
     const headerArray = ['Home', 'Menu', 'Contacts'];
     const headerObject = {
         name: 'Summer Cafe',
-        path: './images/logo.png'
+        path: 'images/logo.png'
     }
     const footerObject = {
         text: 'Made by Rustam Yuburov',

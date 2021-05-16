@@ -9,7 +9,7 @@ function createContacts() {
     const number = document.createElement('span');
     number.textContent = `Number: 123 456 789`;
     const place = document.createElement('span');
-    place.textContent = `Addres: Arctica, Coldest street, house #1`;
+    place.textContent = `Address: Arctica, Coldest street, house #1`;
 
     const timetable = document.createElement('div');
     timetable.classList.add('timetable');
