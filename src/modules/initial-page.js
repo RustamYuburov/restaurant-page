@@ -35,6 +35,7 @@ function createNavigation(array) {
 
     array.forEach(element => {
         const button = document.createElement('button');
+        button.setAttribute('id', element)
         button.textContent = element;
         navigation.appendChild(button);
     });
@@ -48,7 +49,7 @@ function createMain() {
     const main = document.createElement('main');
     main.classList.add('main');
 
-    main.appendChild(createAbout());
+    createAbout();
 
     return main;
 }

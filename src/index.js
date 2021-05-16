@@ -1,11 +1,11 @@
 
 import { init } from './modules/initial-page';
+import { createContacts } from './modules/contacts'
+import { createAbout } from './modules/about';
 
 init();
 
-// const buttons = document.querySelectorAll('button');
-// buttons.forEach(button => button.addEventListener('click', 'loadPage'));
-
-// // function loadPage(e) {
-// //     const page = e.target.
-// // }
+const contactBtn = document.getElementById('Contacts');
+contactBtn.addEventListener('click', createContacts);
+const homeBtn = document.getElementById('Home');
+homeBtn.addEventListener('click', createAbout);
