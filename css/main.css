@@ -124,10 +124,40 @@ body {
     margin: 30px;
     display: flex;
     flex-direction: column;
-    font-family:'Caveat', Arial, Helvetica, sans-serif;
+    font-family: 'Caveat', Arial, Helvetica, sans-serif;
     font-size: 30px;
     font-weight: 550;
     color: rgb(0, 255, 191);
     text-align: start;
     padding: 100px 0 0 100px;
+}
+
+/* Menu */
+
+.menu {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.mealCard {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.mealCard img {
+    height: 350px;
+    margin: 10px;
+}
+
+.mealCard p {
+    margin: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Caveat', Arial, Helvetica, sans-serif;
+    font-size: 40px;
 }
