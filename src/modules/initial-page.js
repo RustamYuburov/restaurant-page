@@ -49,7 +49,7 @@ function createMain() {
     const main = document.createElement('main');
     main.classList.add('main');
 
-    createAbout();
+    main.appendChild(createAbout());
 
     return main;
 }

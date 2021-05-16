@@ -22,8 +22,6 @@ function createAboutText(text) {
 }
 
 function createAbout() {
-    const main = document.querySelector('main');
-
     const home = document.createElement('div');
     home.setAttribute('id', 'home');
 
@@ -35,7 +33,7 @@ function createAbout() {
     home.appendChild(createAboutImg(aboutObject.path));
     home.appendChild(createAboutText(aboutObject.text));
     
-    main.appendChild(home);
+    return home;
 }
 
 export { createAbout }

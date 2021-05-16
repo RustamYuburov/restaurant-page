@@ -8,4 +8,12 @@ init();
 const contactBtn = document.getElementById('Contacts');
 contactBtn.addEventListener('click', createContacts);
 const homeBtn = document.getElementById('Home');
-homeBtn.addEventListener('click', createAbout);
+homeBtn.addEventListener('click', createHome);
+
+
+function createHome() {
+    const container = document.querySelector('main');
+    container.textContent = '';
+
+    container.appendChild(createAbout());
+}
